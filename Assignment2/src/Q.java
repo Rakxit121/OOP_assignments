@@ -253,6 +253,17 @@ class Q11{
 //        11. Write a program to enter the values of two variables 'a' and 'b' from keyboard and then
 //        check if both the conditions 'a < 50' and 'a < b' are true.
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter value for a: ");
+        int a = scanner.nextInt();
+        System.out.println("Enter value for b: ");
+        int b = scanner.nextInt();
+
+        if ((a<50) && (a<b)){
+            System.out.println("The condition a<50 and a<b are true");
+        }else {
+            System.out.println("The condition a<50 and a<b are false");
+        }
     }
 }
 
@@ -261,5 +272,23 @@ class Q12{
 //        12. If the marks of Robert in three subjects are entered through keyboard (each out of 100 ),
 //        write a program to calculate his total marks and percentage marks.
 
+        float eng, math, sci, com;
+        double total,percentage;
+        Scanner op=new Scanner(System.in);
+        /* Input marks of all five subjects */
+        System.out.println("Enter three marks of Robert:");
+        System.out.print("Enter marks of English:");
+        eng=op.nextFloat();
+        System.out.print("Enter marks of Maths:");
+        math=op.nextFloat();
+        System.out.print("Enter marks of Computer:");
+        com=op.nextFloat();
+
+        /* Calculate total, percentage */
+        total = eng + math+ com;
+        percentage = (total / 300.0) * 100;
+
+        System.out.println("The total marks obtained Roberts in three subjects is: "+percentage+"%");
     }
+
 }
