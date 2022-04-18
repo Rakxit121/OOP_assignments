@@ -69,7 +69,7 @@ class Q3 {
 
         // input the marks of subjects
         float eng, math, sci, com;
-        double total, average, percentage;
+        double total,percentage;
         Scanner op=new Scanner(System.in);
         /* Input marks of all five subjects */
         System.out.println("Enter marks of four subjects:");
@@ -86,7 +86,7 @@ class Q3 {
         total = eng + math + sci + com;
         percentage = (total / 400.0) * 100;
 
-        System.out.println("The total marks obtained from the four subjects is: "+total/100+"%");
+        System.out.println("The total marks obtained from the four subjects is: "+percentage+"%");
     }
 }
 
@@ -108,8 +108,7 @@ class Q4{
 
 class Q5{
     public static void main(String[] args) {
-/*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type
-        casted to int.*/
+/*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type cast to int.*/
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter length: ");
@@ -129,6 +128,17 @@ class Q6{
 //        6. Take name, roll number and field of interest from user and print in the format below :Hey,
 //                my name is xyz and my roll number is xyz. My field of interest are xyz.
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter your roll no. : ");
+        String rollno = scanner.nextLine();
+        System.out.println("Enter your interest : ");
+        String interest = scanner.nextLine();
+
+        System.out.println("Hey,\n" +
+                " Hey my name is"+ name +"and my roll number is "+rollno+". My field of interest are "+interest+".");
+
     }
 }
 
@@ -137,6 +147,39 @@ class Q7{
     public static void main(String[] args) {
 //        Take side of a square from user and print area and perimeter of it. Also, calculate SI, Area
 //        of triangle and Volume of Cube and Cuboid. Take the attributes as user input.
+
+        Scanner scanner = new Scanner(System.in);
+
+        // input the length of a square
+        System.out.println("For area and volume of square");
+        System.out.println("Enter length of square: ");
+        double len = scanner.nextDouble();
+
+        int area = (int)len^2;
+        int volume = (int)len^3;
+
+        System.out.println();
+        // output
+        System.out.println("The area  of square is : "+area);
+        System.out.println("The volume  of square is : "+volume);
+
+        System.out.println("Using the same length of square- "+len+" as length of cube");
+        int volume_cube = area^3;
+
+        System.out.println("The volume of cube is: "+volume_cube);
+
+        System.out.println();
+
+        System.out.println("For area of triangle");
+        System.out.println("Enter length of triangle: ");
+        double len_tri = scanner.nextDouble();
+        System.out.println("Enter breadth of triangle: ");
+        double height_tri = scanner.nextDouble();
+
+        double area_tri = len_tri*height_tri;
+
+        // output
+        System.out.println("The area of triangle is : "+(area_tri/2));
 
     }
 }
@@ -148,6 +191,17 @@ class Q8{
 //                E.g.- INPUT : 2 OUTPUT : 4
 //        INPUT : 5 OUTPUT : 25
 
+        Scanner scanner = new Scanner(System.in);
+
+        // input number to square
+        System.out.println("Enter the number you want to square square: ");
+        double num = scanner.nextDouble();
+
+        int square = (int)num * (int)num;
+        int cube = (int)num * (int)num *(int)num;
+
+        System.out.println("The square of input number is: "+square);
+        System.out.println("The cube of input number is: "+cube);
     }
 }
 
@@ -159,6 +213,15 @@ class Q9{
 //                Dope
 //        OUTPUT : CodesDope
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter string: ");
+        String str1 = scanner.nextLine();
+        System.out.println("Enter second string: ");
+        String str2 = scanner.nextLine();
+
+        System.out.println("------String-----");
+        System.out.print(str1);
+        System.out.println(str2);
     }
 }
 
@@ -169,6 +232,20 @@ class Q10{
 //        all are equal
 //        any of two are equal
 //                ( use && || with ternary operator )
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter three numbers: ");
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        int num3 = scanner.nextInt();
+
+        if ((num1 == num2) && (num1== num2) && (num2==num3)) {
+            System.out.println("All are equal");
+        }else if ((num1 == num2) || (num1== num2) || (num2==num3)) {
+            System.out.println("2 numbers are equal");
+        }else {
+            System.out.println("Numbers are not  equal");
+        }
     }
 }
 class Q11{
