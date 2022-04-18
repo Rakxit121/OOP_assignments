@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 //Assignment 2
@@ -12,24 +13,20 @@ class Q1 {
 
 //        1. Write a program to take student details as input and display the result.
         // user input string
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter first name: ");
-        String a = scanner.nextLine();
-        System.out.println("Enter last name: ");
-        String l = scanner.nextLine();
-        System.out.println("Enter class: ");
-        String cl = scanner.nextLine();
-        System.out.println("Enter age: ");
-        String b = scanner.nextLine();
-        System.out.println("Enter address: ");
-        String c = scanner.nextLine();
+        String fname = JOptionPane.showInputDialog("Enter your first name: ");
+        String lname = JOptionPane.showInputDialog("Enter your last name: ");
+        String rollno = JOptionPane.showInputDialog("Enter your Rollno.: ");
+        String age = JOptionPane.showInputDialog("Enter your age: ");
+        String address = JOptionPane.showInputDialog("Enter your address: ");
+        String batch = JOptionPane.showInputDialog("Enter your batch: ");
 
+        JOptionPane.showMessageDialog(null,"----- User Data ----- \n Name:"+fname+" "+lname+"\nBatch: "+batch+"\nRollno. "+rollno+"\nAddress: "+address);
         System.out.println("------Student details-----");
-        System.out.print("NAME: " + a);
-        System.out.println(" " + l);
-        System.out.println("CLASS: " + cl);
-        System.out.println("AGE: " + b);
-        System.out.println("ADDRESS: " + c);
+        System.out.print("NAME: " + fname);
+        System.out.println(" " + lname);
+        System.out.println("Batch: " + batch);
+        System.out.println("AGE: " + age);
+        System.out.println("ADDRESS: " + address);
 
     }
 }
@@ -41,16 +38,19 @@ class Q2 {
 //            2. Write a program to calculate sum of four numbers taking user input.
 
         // input the number
+        double num1, num2, num3, num4;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter four number: ");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
-        int num4 = scanner.nextInt();
+
+        num1 = Double.parseDouble(JOptionPane.showInputDialog(null,"1st num"));
+        num2 = Double.parseDouble(JOptionPane.showInputDialog(null,"2nd num"));
+        num3 = Double.parseDouble(JOptionPane.showInputDialog(null,"3rd num"));
+        num4 = Double.parseDouble(JOptionPane.showInputDialog(null,"4th num"));
 
 
-        int sum = num1+num2+num3+num4;
-        System.out.println("The sum of "+num1+","+num2+","+num3+","+num4+"= "+sum);
+        double sum = num1+num2+num3+num4;
+        String eq = num1 +"+"+num2+"+"+num3+"+"+num4;
+        JOptionPane.showMessageDialog(null,"The sum of four numbers are:: \n"+eq+"\n"+sum);
 
     }
 }
@@ -66,28 +66,23 @@ class Q3 {
         If more than 59 -> Upper second Class
         If more than 49 -> Second class
         If more than 39 -> Third class and if below than 40 the result is fail.*/
+            double eng, math, sci, com;
+            Scanner op=new Scanner(System.in);
+            /* Input marks of all five subjects */
+            System.out.println("Enter marks of four subjects:");
+            eng = Double.parseDouble(JOptionPane.showInputDialog("Enter marks of English subjects:"));
+            math = Double.parseDouble(JOptionPane.showInputDialog("Enter marks of Maths subjects:"));
+            sci = Double.parseDouble(JOptionPane.showInputDialog("Enter marks of Science subjects:"));
+            com = Double.parseDouble(JOptionPane.showInputDialog("Enter marks of Computer subjects:"));
 
-        // input the marks of subjects
-        float eng, math, sci, com;
-        double total,percentage;
-        Scanner op=new Scanner(System.in);
-        /* Input marks of all five subjects */
-        System.out.println("Enter marks of four subjects:");
-        System.out.print("Enter marks of English subjects:");
-        eng=op.nextFloat();
-        System.out.print("Enter marks of Maths subjects:");
-        math=op.nextFloat();
-        System.out.print("Enter marks of Science subjects:");
-        sci=op.nextFloat();
-        System.out.print("Enter marks of Computer subjects:");
-        com=op.nextFloat();
 
-        /* Calculate total, percentage */
-        total = eng + math + sci + com;
-        percentage = (total / 400.0) * 100;
+            /* Calculate total, percentage */
+            int total =(int) ((eng + math + sci + com)/400*100);
+            int percentage = total;
 
-        System.out.println("The total marks obtained from the four subjects is: "+percentage+"%");
-    }
+//        System.out.println("The total marks obtained from the four subjects is: "+percentage+"%");
+            JOptionPane.showMessageDialog(null,"The obtained marks is--\n"+percentage+"\u0025");
+        }
 }
 
 class Q4{
@@ -108,7 +103,7 @@ class Q4{
 
 class Q5{
     public static void main(String[] args) {
-/*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type cast to int.*/
+        /*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type cast to int.*/
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter length: ");
