@@ -22,7 +22,7 @@ class Q1 {
 
         JOptionPane.showMessageDialog(null,"----- User Data ----- \n Name:"+fname+" "+lname+"\nBatch: "+batch+"\nRollno. "+rollno+"\nAddress: "+address);
         JOptionPane.showMessageDialog(null,"------Student details-----");
-        System.out.print("NAME: " + fname);
+        JOptionPane.showInputDialog(null,"NAME: " + fname);
         JOptionPane.showMessageDialog(null," " + lname);
         JOptionPane.showMessageDialog(null,"Batch: " + batch);
         JOptionPane.showMessageDialog(null,"AGE: " + age);
@@ -168,11 +168,8 @@ class Q8{
 //                E.g.- INPUT : 2 OUTPUT : 4
 //        INPUT : 5 OUTPUT : 25
 
-        Scanner scanner = new Scanner(System.in);
-
-        // input number to square
-        JOptionPane.showMessageDialog(null,"Enter the number you want to square square: ");
-        double num = scanner.nextDouble();
+       // input number to square
+        double num = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter the number you want tot square: "));
 
         int square = (int)num * (int)num;
         int cube = (int)num * (int)num *(int)num;
@@ -197,7 +194,7 @@ class Q9{
         String str2 = scanner.nextLine();
 
         JOptionPane.showMessageDialog(null,"------String-----");
-        System.out.print(str1);
+        JOptionPane.showInputDialog(null,str1);
         JOptionPane.showMessageDialog(null,str2);
     }
 }
@@ -211,10 +208,11 @@ class Q10{
 //                ( use && || with ternary operator )
 
         Scanner scanner = new Scanner(System.in);
-        JOptionPane.showMessageDialog(null,"Enter three numbers: ");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
+        JOptionPane.showMessageDialog(null,"Enter the three numbers: ");
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter first number: "));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter second number: "));
+        int num3 = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter third number: "));
+
 
         if ((num1 == num2) && (num1== num2) && (num2==num3)) {
             JOptionPane.showMessageDialog(null,"All are equal");
@@ -230,11 +228,12 @@ class Q11{
 //        11. Write a program to enter the values of two variables 'a' and 'b' from keyboard and then
 //        check if both the conditions 'a < 50' and 'a < b' are true.
 
+        float a,b;
         Scanner scanner = new Scanner(System.in);
-        JOptionPane.showMessageDialog(null,"Enter value for a: ");
-        int a = scanner.nextInt();
-        JOptionPane.showMessageDialog(null,"Enter value for b: ");
-        int b = scanner.nextInt();
+        a = Float.parseFloat(JOptionPane.showInputDialog(null,"Enter value for a: "));
+
+        b = Float.parseFloat(JOptionPane.showInputDialog(null,"Enter value for b: "));
+
 
         if ((a<50) && (a<b)){
             JOptionPane.showMessageDialog(null,"The condition a<50 and a<b are true");
@@ -254,12 +253,9 @@ class Q12{
         Scanner op=new Scanner(System.in);
         /* Input marks of all five subjects */
         JOptionPane.showMessageDialog(null,"Enter three marks of Robert:");
-        System.out.print("Enter marks of English:");
-        eng=op.nextFloat();
-        System.out.print("Enter marks of Maths:");
-        math=op.nextFloat();
-        System.out.print("Enter marks of Computer:");
-        com=op.nextFloat();
+        eng = Float.parseFloat(JOptionPane.showInputDialog(null,"Enter marks of English:"));
+        math= Float.parseFloat(JOptionPane.showInputDialog(null,"Enter marks of Maths:"));
+        com= Float.parseFloat(JOptionPane.showInputDialog(null,"Enter marks of Computer:"));
 
         /* Calculate total, percentage */
         total = eng + math+ com;
@@ -280,7 +276,7 @@ class Q14{
         Scanner op=new Scanner(System.in);
         /* Input marks of all five subjects */
         JOptionPane.showMessageDialog(null,"Enter three marks of Robert:");
-        System.out.print("Enter marks of English:");
+        eng= Float.parseFloat(JOptionPane.showInputDialog(null,"Enter marks of English:"));
 
         /* Calculate total, percentage */
 //        total = eng + math+ com;
