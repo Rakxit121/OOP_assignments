@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 //Assignment 2
-public class Q {
+public class Assignment2 {
     public static void main(String[] args) {
 
     }
 }
 
-class Q1 {
+class Q_scanner1 {
     public static void main(String[] args) {
 
 //        1. Write a program to take student details as input and display the result.
@@ -35,7 +35,7 @@ class Q1 {
 }
 
 
-class Q2 {
+class Q_scanner2 {
     public static void main(String[] args) {
 
 //            2. Write a program to calculate sum of four numbers taking user input.
@@ -57,12 +57,12 @@ class Q2 {
 
 
 
-class Q3 {
+class Q_scanner3 {
     public static void main(String[] args) {
 
             /*        3. Write a program to take input of the total marks of four subjects of a student and calculate
         the total percentage secured. Then display the percentage and final result of the student;
-        If equal to or more than 70 -> First Class
+        If eQ_scannerual to or more than 70 -> First Class
         If more than 59 -> Upper second Class
         If more than 49 -> Second class
         If more than 39 -> Third class and if below than 40 the result is fail.*/
@@ -90,7 +90,7 @@ class Q3 {
     }
 }
 
-class Q4{
+class Q_scanner4{
     public static void main(String[] args) {
 //        4. Write a program to take two integer inputs from user and print sum and product of them.
 
@@ -106,7 +106,7 @@ class Q4{
 }
 
 
-class Q5{
+class Q_scanner5{
     public static void main(String[] args) {
 /*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type cast to int.*/
 
@@ -123,7 +123,7 @@ class Q5{
 }
 
 
-class Q6{
+class Q_scanner6{
     public static void main(String[] args) {
 //        6. Take name, roll number and field of interest from user and print in the format below :Hey,
 //                my name is xyz and my roll number is xyz. My field of interest are xyz.
@@ -143,16 +143,16 @@ class Q6{
 }
 
 
-class Q7{
+class Q_scanner7{
     public static void main(String[] args) {
-//        Take side of a square from user and print area and perimeter of it. Also, calculate SI, Area
+//        Take side of a sQ_scanneruare from user and print area and perimeter of it. Also, calculate SI, Area
 //        of triangle and Volume of Cube and Cuboid. Take the attributes as user input.
 
         Scanner scanner = new Scanner(System.in);
 
-        // input the length of a square
-        System.out.println("For area and volume of square");
-        System.out.println("Enter length of square: ");
+        // input the length of a sQ_scanneruare
+        System.out.println("For area and volume of sQ_scanneruare");
+        System.out.println("Enter length of sQ_scanneruare: ");
         double len = scanner.nextDouble();
 
         int area = (int)len^2;
@@ -160,10 +160,10 @@ class Q7{
 
         System.out.println();
         // output
-        System.out.println("The area  of square is : "+area);
-        System.out.println("The volume  of square is : "+volume);
+        System.out.println("The area  of sQ_scanneruare is : "+area);
+        System.out.println("The volume  of sQ_scanneruare is : "+volume);
 
-        System.out.println("Using the same length of square- "+len+" as length of cube");
+        System.out.println("Using the same length of sQ_scanneruare- "+len+" as length of cube");
         int volume_cube = area^3;
 
         System.out.println("The volume of cube is: "+volume_cube);
@@ -185,28 +185,28 @@ class Q7{
 }
 
 
-class Q8{
+class Q_scanner8{
     public static void main(String[] args) {
-//        8. Write a program to find square of a number.
+//        8. Write a program to find sQ_scanneruare of a number.
 //                E.g.- INPUT : 2 OUTPUT : 4
 //        INPUT : 5 OUTPUT : 25
 
         Scanner scanner = new Scanner(System.in);
 
-        // input number to square
-        System.out.println("Enter the number you want to square square: ");
+        // input number to sQ_scanneruare
+        System.out.println("Enter the number you want to sQ_scanneruare sQ_scanneruare: ");
         double num = scanner.nextDouble();
 
-        int square = (int)num * (int)num;
+        int sQ_scanneruare = (int)num * (int)num;
         int cube = (int)num * (int)num *(int)num;
 
-        System.out.println("The square of input number is: "+square);
+        System.out.println("The sQ_scanneruare of input number is: "+sQ_scanneruare);
         System.out.println("The cube of input number is: "+cube);
     }
 }
 
 
-class Q9{
+class Q_scanner9{
     public static void main(String[] args) {
 //        9. Take two different string input and print them in same line. E.g.-
 //                INPUT : Codes
@@ -226,11 +226,11 @@ class Q9{
 }
 
 
-class Q10{
+class Q_scanner10{
     public static void main(String[] args) {
 //        10. Take 3 inputs from user and check :
-//        all are equal
-//        any of two are equal
+//        all are eQ_scannerual
+//        any of two are eQ_scannerual
 //                ( use && || with ternary operator )
 
         Scanner scanner = new Scanner(System.in);
@@ -240,15 +240,15 @@ class Q10{
         int num3 = scanner.nextInt();
 
         if ((num1 == num2) && (num1== num2) && (num2==num3)) {
-            System.out.println("All are equal");
+            System.out.println("All are eQ_scannerual");
         }else if ((num1 == num2) || (num1== num2) || (num2==num3)) {
-            System.out.println("2 numbers are equal");
+            System.out.println("2 numbers are eQ_scannerual");
         }else {
-            System.out.println("Numbers are not  equal");
+            System.out.println("Numbers are not  eQ_scannerual");
         }
     }
 }
-class Q11{
+class Q_scanner11{
     public static void main(String[] args) {
 //        11. Write a program to enter the values of two variables 'a' and 'b' from keyboard and then
 //        check if both the conditions 'a < 50' and 'a < b' are true.
@@ -267,7 +267,7 @@ class Q11{
     }
 }
 
-class Q12{
+class Q_scanner12{
     public static void main(String[] args) {
 //        12. If the marks of Robert in three subjects are entered through keyboard (each out of 100 ),
 //        write a program to calculate his total marks and percentage marks.
@@ -293,7 +293,7 @@ class Q12{
 
 }
 
-class Q14{
+class Q_scanner14{
     public static void main(String[] args) {
 //        12. If the marks of Robert in three subjects are entered through keyboard (each out of 100 ),
 //        write a program to calculate his total marks and percentage marks.

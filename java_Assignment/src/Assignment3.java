@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.util.Scanner;
 
 //Assignment 2
-public class Q {
+public class Assignment3{
     public static void main(String[] args) {
 
     }
 }
 
-class Q1 {
+class Q_joption1 {
     public static void main(String[] args) {
 
 //        1. Write a program to take student details as input and display the result.
@@ -32,7 +32,7 @@ class Q1 {
 }
 
 
-class Q2 {
+class Q_joption2 {
     public static void main(String[] args) {
 
 //            2. Write a program to calculate sum of four numbers taking user input.
@@ -49,20 +49,20 @@ class Q2 {
 
 
         double sum = num1+num2+num3+num4;
-        String eq = num1 +"+"+num2+"+"+num3+"+"+num4;
-        JOptionPane.showMessageDialog(null,"The sum of four numbers are:: \n"+eq+"\n"+sum);
+        String eQ_joption = num1 +"+"+num2+"+"+num3+"+"+num4;
+        JOptionPane.showMessageDialog(null,"The sum of four numbers are:: \n"+eQ_joption+"\n"+sum);
 
     }
 }
 
 
 
-class Q3 {
+class Q_joption3 {
     public static void main(String[] args) {
 
             /*        3. Write a program to take input of the total marks of four subjects of a student and calculate
         the total percentage secured. Then display the percentage and final result of the student;
-        If equal to or more than 70 -> First Class
+        If eQ_joptionual to or more than 70 -> First Class
         If more than 59 -> Upper second Class
         If more than 49 -> Second class
         If more than 39 -> Third class and if below than 40 the result is fail.*/
@@ -85,7 +85,7 @@ class Q3 {
         }
 }
 
-class Q4{
+class Q_joption4{
     public static void main(String[] args) {
 //        4. Write a program to take two integer inputs from user and print sum and product of them.
 
@@ -102,7 +102,7 @@ class Q4{
 }
 
 
-class Q5{
+class Q_joption5{
     public static void main(String[] args) {
         /*    5.   Ask user to give two double input for length and breadth of a rectangle and print area type cast to int.*/
 
@@ -116,7 +116,7 @@ class Q5{
 }
 
 
-class Q6{
+class Q_joption6{
     public static void main(String[] args) {
 //        6. Take name, roll number and field of interest from user and print in the format below :Hey,
 //                my name is xyz and my roll number is xyz. My field of interest are xyz.
@@ -134,22 +134,22 @@ class Q6{
 }
 
 
-class Q7{
+class Q_joption7{
     public static void main(String[] args) {
-//        Take side of a square from user and print area and perimeter of it. Also, calculate SI, Area
+//        Take side of a sQ_joptionuare from user and print area and perimeter of it. Also, calculate SI, Area
 //        of triangle and Volume of Cube and Cuboid. Take the attributes as user input.
 
         Scanner scanner = new Scanner(System.in);
 
-        // input the length of a square
-        double len = Double.parseDouble(JOptionPane.showInputDialog(null,"For area and volume of square\n"+"Enter the length of a square"));
+        // input the length of a sQ_joptionuare
+        double len = Double.parseDouble(JOptionPane.showInputDialog(null,"For area and volume of sQ_joptionuare\n"+"Enter the length of a sQ_joptionuare"));
 
         int area = (int)(len * len);
         int volume = (int)(len*len*len);
         int volume_cube = area*area*area;
         // output
-        JOptionPane.showMessageDialog(null,"The input length of square is: "+len+"\n"+"The area  of square is : "+area+"\n"+"The volume  of square is : "+volume+"\n"+
-                "Using the same length of square- "+len+" as length of cube.\n"+"The volume of cube is: "+volume_cube);
+        JOptionPane.showMessageDialog(null,"The input length of sQ_joptionuare is: "+len+"\n"+"The area  of sQ_joptionuare is : "+area+"\n"+"The volume  of sQ_joptionuare is : "+volume+"\n"+
+                "Using the same length of sQ_joptionuare- "+len+" as length of cube.\n"+"The volume of cube is: "+volume_cube);
 
         double len_tri = Double.parseDouble(JOptionPane.showInputDialog(null,"For area of triangle: "+"Enter the length of a triangle: "));
         double height_tri = Double.parseDouble(JOptionPane.showInputDialog(null,"Enter the length of a triangle: "));
@@ -162,25 +162,25 @@ class Q7{
 }
 
 
-class Q8{
+class Q_joption8{
     public static void main(String[] args) {
-//        8. Write a program to find square of a number.
+//        8. Write a program to find sQ_joptionuare of a number.
 //                E.g.- INPUT : 2 OUTPUT : 4
 //        INPUT : 5 OUTPUT : 25
 
-       // input number to square
-        double num = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter the number you want tot square: "));
+       // input number to sQ_joptionuare
+        double num = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter the number you want tot sQ_joptionuare: "));
 
-        int square = (int)num * (int)num;
+        int sQ_joptionuare = (int)num * (int)num;
         int cube = (int)num * (int)num *(int)num;
 
-        JOptionPane.showMessageDialog(null,"The square of input number is: "+square);
+        JOptionPane.showMessageDialog(null,"The sQ_joptionuare of input number is: "+sQ_joptionuare);
         JOptionPane.showMessageDialog(null,"The cube of input number is: "+cube);
     }
 }
 
 
-class Q9{
+class Q_joption9{
     public static void main(String[] args) {
 //        9. Take two different string input and print them in same line. E.g.-
 //                INPUT : Codes
@@ -200,11 +200,11 @@ class Q9{
 }
 
 
-class Q10{
+class Q_joption10{
     public static void main(String[] args) {
 //        10. Take 3 inputs from user and check :
-//        all are equal
-//        any of two are equal
+//        all are eQ_joptionual
+//        any of two are eQ_joptionual
 //                ( use && || with ternary operator )
 
         Scanner scanner = new Scanner(System.in);
@@ -215,15 +215,15 @@ class Q10{
 
 
         if ((num1 == num2) && (num1== num2) && (num2==num3)) {
-            JOptionPane.showMessageDialog(null,"All are equal");
+            JOptionPane.showMessageDialog(null,"All are eQ_joptionual");
         }else if ((num1 == num2) || (num1== num2) || (num2==num3)) {
-            JOptionPane.showMessageDialog(null,"2 numbers are equal");
+            JOptionPane.showMessageDialog(null,"2 numbers are eQ_joptionual");
         }else {
-            JOptionPane.showMessageDialog(null,"Numbers are not  equal");
+            JOptionPane.showMessageDialog(null,"Numbers are not  eQ_joptionual");
         }
     }
 }
-class Q11{
+class Q_joption11{
     public static void main(String[] args) {
 //        11. Write a program to enter the values of two variables 'a' and 'b' from keyboard and then
 //        check if both the conditions 'a < 50' and 'a < b' are true.
@@ -243,7 +243,7 @@ class Q11{
     }
 }
 
-class Q12{
+class Q_joption12{
     public static void main(String[] args) {
 //        12. If the marks of Robert in three subjects are entered through keyboard (each out of 100 ),
 //        write a program to calculate his total marks and percentage marks.
@@ -266,7 +266,7 @@ class Q12{
 
 }
 
-class Q14{
+class Q_joption14{
     public static void main(String[] args) {
 //        12. If the marks of Robert in three subjects are entered through keyboard (each out of 100 ),
 //        write a program to calculate his total marks and percentage marks.
