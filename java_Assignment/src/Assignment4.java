@@ -457,7 +457,7 @@ class If_else_Q9{
         if((character>='a' && character<='z') || (character>='A' && character<='Z')){
             System.out.print(character + " is an alphabet.");
         }
-        else if (character>0 && character<0 && character==0){
+        else if (character>='0' && character<='9' ){
             System.out.print(character + " is an digit.");
         }
         else{
@@ -524,47 +524,65 @@ class If_else_Q12{
         System.out.println("enter the digit: ");
         int day=scanner.nextInt();
         if (day==1){
-            System.out.println("Baisakh has 30 days");
+            System.out.println("Jan has 30 days");
         }
         else if (day==2){
-            System.out.println("jestha has 30 days");
+            System.out.println("Enter the year: ");
+            int number_of_DaysInMonth;
+            int year=scanner.nextInt();
+
+            if (((year % 400) == 0) || (((year % 4) == 0) && ((year % 100) != 0))) {
+                number_of_DaysInMonth = 29;
+                System.out.println("Feb has "+number_of_DaysInMonth+" days in year "+year);
+            }
+            else{
+            number_of_DaysInMonth =28;
+                System.out.println("Feb has "+number_of_DaysInMonth+" days in year "+year);
+            }
+
         }
         else if (day==3){
-            System.out.println("Aasar has 30 days");
+            System.out.println("Mar has 30 days");
         }
         else if (day==4){
-            System.out.println("Shrawan has 30 days");
+            System.out.println("Apr has 31 days");
         }
         else if (day==5){
-            System.out.println("Bhadra has 30 days");
+            System.out.println("May has 30 days");
         }
         else if (day==6){
-            System.out.println("Ashwoj has 30 days");
+            System.out.println("June has 30 days");
         }
         else if (day==7){
-            System.out.println("Kartik has 30 days");
+            System.out.println("July has 31 days");
         }
         else if (day==8){
-            System.out.println("Mangsir has 30 days");
+            System.out.println("Aug has 30 days");
         }
         else if (day==9){
-            System.out.println("Poush has 30 days");
+            System.out.println("Sep has 30 days");
         }
         else if (day==10){
-            System.out.println("Magh has 30 days");
+            System.out.println("Oct has 31 days");
         } else if (day==11){
-            System.out.println("Falgun has 30 days");
+            System.out.println("Nov has 31 days");
         } else if (day==12){
-            System.out.println("Chaitra has 30 days");
+            System.out.println("Dec has 30 days");
         }
         else{
-            System.out.println("default");
+            System.out.println("Invalid number");
         }
     }
 }
 
 //13. Write a JAVA program to count total number of notes in given amount.
 class If_else_Q13{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        int totalNoOfNotes;
+        if (amount % 2 == 0);
+    }
 
 }
 
@@ -585,9 +603,21 @@ class If_else_Q14{
         else{
             System.out.println("triangle is invalid");
         }}}
-
+//  Write a JAVA program to input all sides of a triangle and check whether triangle is valid or not
 class If_else_Q15{
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the first side: ");
+        int side1 = scanner.nextInt();
+        System.out.println("enter the second side: ");
+        int side2 = scanner.nextInt();
+        System.out.println("enter the third side: ");
+        int side3 = scanner.nextInt();
+        if (side1+side2>side3){
+            System.out.println("It is a valid triangle");
+        }else{
+            System.out.println("It is not a valid triangle");
+        }
 }
 
 
@@ -613,7 +643,57 @@ class If_else_Q16{
     }
 }
 
+// Write a JAVA program to find all roots of a quadratic equation.
 class If_else_Q17{
+    public static void main(String[] args) {
+        Scanner scanner =new Scanner(System.in);
+
+        // value a, b, and c
+        double a, b, c;
+        double root1, root2;
+
+        System.out.println("enter the side: ");
+        a = scanner.nextInt();
+        System.out.println("enter the side: ");
+        b = scanner.nextInt();
+        System.out.println("enter the side: ");
+        c = scanner.nextInt();
+
+
+        // calculate the determinant (b2 - 4ac)
+        double determinant = b * b - 4 * a * c;
+
+        // check if determinant is greater than 0
+        if (determinant > 0) {
+
+            // two real and distinct roots
+            root1 = (-b + Math.sqrt(determinant)) / (2 * a);
+            root2 = (-b - Math.sqrt(determinant)) / (2 * a);
+
+            System.out.format("root1 = %.2f and root2 = %.2f", root1, root2);
+        }
+
+        // check if determinant is equal to 0
+        else if (determinant == 0) {
+
+            // two real and equal roots
+            // determinant is equal to 0
+            // so -b + 0 == -b
+            root1 = root2 = -b / (2 * a);
+            System.out.format("root1 = root2 = %.2f;", root1);
+        }
+
+        // if determinant is less than zero
+        else {
+
+            // roots are complex number and distinct
+            double real = -b / (2 * a);
+            double imaginary = Math.sqrt(-determinant) / (2 * a);
+            System.out.format("root1 = %.2f+%.2fi", real, imaginary);
+            System.out.format("\nroot2 = %.2f-%.2fi", real, imaginary);
+        }
+    }
+}
 
 }
 
