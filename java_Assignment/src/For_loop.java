@@ -37,26 +37,24 @@ class OnetoTwenty {
     }
 }
 
-//class Prime_num_forloop{
-//    public static void main(String[] args) {
-//        System.out.println("Prime number");
-//        Scanner scanner=new Scanner(System.in);
-//        int inp=scanner.nextInt();
-//        int count=0;
-//    for(int i= 10;i<=i;i++){
-//
-//        if(inp%2==0){
-//            count+=1;
-//        }
-//        if(count<=2){
-//            String result="The number is prime number";
-//        }else{
-//            String result="The number is not prime number";
-//        }
-//    }
-//        System.out.println(result);
-//    }
-//}
+/* class Prime_num_forloop{
+    public static void main(String[] args) {
+        System.out.println("Prime number");
+        Scanner scanner=new Scanner(System.in);
+        int inp=scanner.nextInt();
+        int count=0;
+    for(int i= 10;i<=i;i++){
+        if(inp%2==0){
+            count+=1;
+        }
+        if(count<=2){
+            String result="The number is prime number";
+        }else{
+            String result="The number is not prime number";
+        }    }
+        System.out.println(result);
+    }
+}*/
 
 class Prime_num_nested_forloop{
     public static void main(String[] args) {
@@ -71,11 +69,10 @@ class Prime_num_nested_forloop{
             }
             if(count<=2){
                 System.out.println("The number is prime number");
-                break;
             }else{
                 System.out.println("The number is not prime number");
-                break;
             }
+            break;
         }
     }
 }
