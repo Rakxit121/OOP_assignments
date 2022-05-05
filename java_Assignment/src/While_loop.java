@@ -93,14 +93,51 @@ class Prime_check {
 class ExampleOfInfiniteWhileLoop{
     public static void main(String[] args)
     {
-        int i=10;
-        while(true)
+        int i=1;
+        boolean a =true;
+        while(a)
         {
-            i--;
-            if(i>=1){
+            if(i<=10){
                 System.out.println(i);
+            }else{
+                a=false;
             }
+            i++;
+
 
         }
     }
 }
+
+
+//      Add user input sum till 0 using do wile
+class While_Useradd{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int uin=0, sum=0;
+        System.out.println("Enter number to add till 0:");
+        while(uin!=0) {
+
+
+        }
+        System.out.println("The sum of user input number is: "+ sum);
+
+    }
+}
+
+// find numtiple of 3 and how many odd number are there
+class Fodd_innultiple{
+    public static void main(String[] args) {
+        int i=1,n=3, m,c=0;
+        do{
+            m=n*i;
+            System.out.println(m);
+            if(m%2!=0) {
+                c+=1;
+            }
+            i++;
+        }while(i<=10);
+        System.out.println("The odd numbers in multiple of 3 = "+c);
+    }
+}
+
