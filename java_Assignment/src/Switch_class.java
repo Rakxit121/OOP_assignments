@@ -711,3 +711,20 @@ class Qu22 {
         System.out.println(num);
     }
 }
+
+class Even{
+    public static void main(String[] args) {
+        Scanner demo = new Scanner(System.in);
+        int num, x;
+        System.out.print("Enter the number ");
+        num = demo.nextInt();
+        x = num % 2;
+
+        switch (x) {
+            case 0 -> System.out.println("Even");
+            default -> {
+                System.out.println("Odd");
+            }
+        }
+    }
+}

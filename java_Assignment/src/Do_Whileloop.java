@@ -29,7 +29,7 @@ class Sum_10{
     }
 }
 
-//      Add user input sum till 0 usign do wile
+//      Add user input sum till 0 using do wile
 class DoWhile_Useradd{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -43,3 +43,4 @@ class DoWhile_Useradd{
 
     }
 }
+

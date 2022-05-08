@@ -114,11 +114,12 @@ class ExampleOfInfiniteWhileLoop{
 class While_Useradd{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int uin=0, sum=0;
-        System.out.println("Enter number to add till 0:");
-        while(uin!=0) {
+        int uin=0, sum = -1;
+        System.out.println("Enter number to add till -1:");
+        while(uin!=-1) {
+            uin = scanner.nextInt();
 
-
+            sum+=uin;
         }
         System.out.println("The sum of user input number is: "+ sum);
 
