@@ -98,37 +98,51 @@ class Sinterest {
 //    }
 //}
 
+// Addition
 class PR {
     public static void main(String[] args) {
-        Function functions = new Function();
-//        Integer val = functions.addNum();
+        PR functions = new PR();
+
+        int a=3;
+        int b=12;int val = functions.addNum(a,b);
 //        System.out.println(val);
-        int val = addNum();
+//        int val = addNum();
+//        addNum();
         System.out.println(val);
     }
-         public static int addNum(){
-            int a=3;
-            int b=12;
-            int c=a+b;
+    public int addNum(int a, int b){
+
+        int c=a+b;
 return c;
     }
 }
 
+// Subtract
 class NPR{
     public static void main(String[] args) {
-        Function functions = new Function();
+
+        int a=20;
+        int b=8;
+
+
+        System.out.println(subtract(a,b));
     }
 
-    public Integer subtract(Integer data){
-
-        return data;
+    public static Integer subtract(int a, int b){
+        int c=a-b;
+        return c;
     }
 }
 
-
+// Multiply
 class PNR{
     public static void main(String[] args) {
-        Function functions = new Function();
+        PNR functions = new PNR();
+
+        int a=21;
+        int b=13;
+//
+
     }
 
 
@@ -137,6 +151,7 @@ class PNR{
     }
 }
 
+//Divide
 class NPNR{
     public static void main(String[] args) {
         Function functions = new Function();
@@ -187,4 +202,84 @@ class Fun3{
         System.out.println(sub);
     }
 }
+
+class Prime {
+    public static void main(String[] args) {
+        int low = 30, high = 50;
+        while (low < high) {
+            if(checkPrimeNumber(low))
+                System.out.print(low + " ");
+            ++low;
+        }
+    }
+
+    public static boolean checkPrimeNumber(int num) {
+        boolean flag = true;
+
+        for(int i = num; i <= num/2; ++i) {
+
+            if(num % i == 0) {
+                flag = false;
+                break;
+            }
+        }
+
+        return flag;
+    }
+}
+
+
+class Prime_num{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int start = scanner.nextInt();
+        int end = scanner.nextInt();
+        printPrime(start,end);
+    }
+
+    public static void printPrime(int start, int end){
+        for(int i=start; i<=end;i++){
+            int counting=0;
+            for (int j=1;j<=1;j++){
+                if (i % j == 0) {
+                    counting++;
+                }
+            }
+        }
+    }
+}
+
+
+// write a java program to find sum of multiples of 5 and 11 which are present in a specific range between a and b.
+
+
+class SumOfMulti{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        SumOfMulti function = new SumOfMulti();
+        System.out.print("Enter a: ");
+        int a = scanner.nextInt();
+        System.out.print("Enter b: ");
+        int b = scanner.nextInt();
+//        int a = 1;
+//        int b=100;
+
+        System.out.println(multi_inBet(a,b));
+
+    }
+
+    public static int multi_inBet(int a, int b) {
+
+        int sum = 0;
+        for (int i = 1; i <= b; i++) {
+
+            if (i % 5 == 0 && i % 11 == 0) {
+                sum = sum + i;
+            }
+        }
+        int sum1 = sum;
+        return sum1;
+    }
+}
+
 
